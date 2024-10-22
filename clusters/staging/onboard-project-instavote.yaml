@@ -5,6 +5,8 @@ metadata:
   name: project-insta
   namespace: flux-system
 spec:
+  despendsOn:
+   - name: init-infra 
   interval: 10m0s
   path: ./projects/instavote-app/staging
   prune: true

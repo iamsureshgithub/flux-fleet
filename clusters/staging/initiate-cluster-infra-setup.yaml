@@ -2,13 +2,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: projects
+  name: init-infra
   namespace: flux-system
 spec:
-  dependsOn:
-   - name: project-insta
   interval: 10m0s
-  path: ./projects/staging
+  path: ./infra/staging
   prune: true
   sourceRef:
     kind: GitRepository
