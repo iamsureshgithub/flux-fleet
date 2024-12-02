@@ -25,7 +25,7 @@ spec:
   chart:
     spec:
       chart: ingress-nginx
-      version: "4.11.3"
+      version: "4.11.2"
       sourceRef:
         kind: HelmRepository
         name: ingress-nginx
@@ -38,3 +38,4 @@ spec:
         nodePorts:
           http: 30080  # Custom NodePort for HTTP
           https: 30443 # Custom NodePort for HTTPS
+      ingressClass: nginx
