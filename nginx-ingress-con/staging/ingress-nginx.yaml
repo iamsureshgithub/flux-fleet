@@ -34,4 +34,7 @@ spec:
   values:
     controller:
       service:
-        loadBalancerIP: "192.156.56.210"
+        type: NodePort
+        nodePorts:
+          http: 30080  # Custom NodePort for HTTP
+          https: 30443 # Custom NodePort for HTTPS
