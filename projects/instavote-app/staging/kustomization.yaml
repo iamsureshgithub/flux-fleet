@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
   - ../base
 patchesStrategicMerge:
-  - instavote-deploy-kustomization.yaml
+  - instavote-deploy-kustomization-patch.yaml
  
