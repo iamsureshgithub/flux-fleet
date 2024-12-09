@@ -9,7 +9,7 @@ spec:
    - name: init-infra 
   interval: 10m0s
   path: ./projects/instavote-app/staging
-  prune: true
+  prune: false
   sourceRef:
     kind: GitRepository
     name: flux-system
